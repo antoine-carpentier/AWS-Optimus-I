@@ -1,0 +1,37 @@
+{
+	"type": "modal",
+	"submit": {
+		"type": "plain_text",
+		"text": "Yes",
+		"emoji": true
+	},
+	"close": {
+		"type": "plain_text",
+		"text": "No",
+		"emoji": true
+	},
+	"title": {
+		"type": "plain_text",
+		"text": "Existing Project",
+		"emoji": true
+	},
+	"blocks": [
+		{
+			"type": "section",
+			"block_id": "confirmation_block",
+			"text": {
+				"type": "mrkdwn",
+				"text": "Project *project_number* is already being monitored.\r\nDo you want to overwrite the existing project data?"
+			}
+		},
+		{
+			"type": "section",
+			"text": {
+				"type": "mrkdwn",
+				"text": "*Project Number:* project_number \r\n*Project Name:* project_name \r\n*Project Spreadsheet:* <project_link|Google Sheets> \r\n*Project Channel:* project_channel"
+			}
+		}
+	],
+	"private_metadata": "None",
+	"callback_id": "optimus_confirmation"
+}

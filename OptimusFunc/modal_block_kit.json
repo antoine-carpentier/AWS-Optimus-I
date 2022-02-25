@@ -1,0 +1,108 @@
+{
+	"title": {
+		"type": "plain_text",
+		"text": "Add Project to Optimus",
+		"emoji": true
+	},
+	"submit": {
+		"type": "plain_text",
+		"text": "Submit",
+		"emoji": true
+	},
+	"type": "modal",
+	"close": {
+		"type": "plain_text",
+		"text": "Cancel",
+		"emoji": true
+	},
+	"blocks": [
+		{
+			"type": "section",
+			"text": {
+				"type": "mrkdwn",
+				"text": "Hey David!\n\nIn order for me to monitor your project, I need a bit of information."
+			}
+		},
+		{
+			"type": "divider"
+		},
+		{
+			"type": "input",
+			"block_id": "number_block",
+			"label": {
+				"type": "plain_text",
+				"text": "FSE Project Number",
+				"emoji": true
+			},
+			"element": {
+				"type": "plain_text_input",
+				"action_id": "number_input",
+				"placeholder": {
+					"type": "plain_text",
+					"text": "20XX-XXX"
+				}
+			}
+		},
+		{
+			"type": "input",
+			"block_id": "name_block",
+			"label": {
+				"type": "plain_text",
+				"text": "FSE Project Name",
+				"emoji": true
+			},
+			"element": {
+				"type": "plain_text_input",
+				"action_id": "name_input",
+				"placeholder": {
+					"type": "plain_text",
+					"text": "Project Name"
+				}
+			}
+		},
+		{
+			"type": "input",
+			"block_id": "url_block",
+			"label": {
+				"type": "plain_text",
+				"text": "Project Google Sheets Link",
+				"emoji": true
+			},
+			"element": {
+				"type": "plain_text_input",
+				"action_id": "link_input",
+				"placeholder": {
+					"type": "plain_text",
+					"text": "https://docs.google.com/spreadsheets/d/..."
+				}
+			}
+		},
+		{
+			"type": "input",
+			"block_id": "channel_block",
+			"label": {
+				"type": "plain_text",
+				"text": "Project Slack Channel",
+				"emoji": true
+			},
+			"element": {
+				"type": "conversations_select",
+				"placeholder": {
+					"type": "plain_text",
+					"text": "Select a channel (optional)",
+					"emoji": true
+				},
+				"filter": {
+						"include": [
+							"private",
+							"public"
+						]
+				},
+				"action_id": "channel_select"
+			},
+			"optional": true
+		}
+	],
+	"private_metadata": "posted_channel",
+	"callback_id": "optimus_add"
+}

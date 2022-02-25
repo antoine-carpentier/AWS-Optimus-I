@@ -1,0 +1,34 @@
+{
+	"type": "modal",
+	"submit": {
+		"type": "plain_text",
+		"text": "Submit",
+		"emoji": true
+	},
+	"close": {
+		"type": "plain_text",
+		"text": "Cancel",
+		"emoji": true
+	},
+	"title": {
+		"type": "plain_text",
+		"text": "Delete Projects from S3",
+		"emoji": true
+	},
+	"blocks": [
+		{
+			"type": "actions",
+			"block_id": "checkbox_block",
+			"elements": [
+				{
+					"type": "checkboxes",
+					"options": [
+					],
+					"action_id": "checkbox_id"
+				}
+			]
+		}
+	],
+	"private_metadata": "None",
+	"callback_id": "optimus_admindelete"
+}
