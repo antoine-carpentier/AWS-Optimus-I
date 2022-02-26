@@ -1,5 +1,5 @@
 # Optimus
-This utility is the first part of a 3-part management tool I called **Optimus**.
+This utility is the second part of a 3-part management tool I called **Optimus**.
 
 The purpose of Optimus is to streamline the logging and retrieval of submittals' and RFIs' (Request For Information) information.
 
